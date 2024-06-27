@@ -8,7 +8,7 @@ import SelectInputProps from '../interfaces/SelectInputProps';
 
 const SelectInput: React.FC<SelectInputProps> = ({label, elements}) => {
     return(
-        <Box>
+        <Box display="flex" flexDirection="column" gap={1}>
             <FormLabel color="dark-theme.label-white">{label}</FormLabel>
             <Select bg="dark-theme.element-grey" border="none" color="gray.400">
                 {elements.map((element, index) => (

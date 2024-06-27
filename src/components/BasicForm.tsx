@@ -16,7 +16,7 @@ const BasicForm: React.FC = () => {
     const options = ['Paul', 'Vijay', 'Sarah', 'John'];
 
     return(
-        <FormControl display="flex" flexDirection="column" gap={5}>
+        <FormControl display="flex" flexDirection="column" gap={7}>
             <TextInput label='Entrez un message' placeholder='placeholder'></TextInput>
             <SelectInput label='Destinataire' elements={options}></SelectInput>
             <Button bg='#2C4BE2' color="white">Crypter</Button>

@@ -7,9 +7,9 @@ const TopTab: React.FC = () => {
     return(
         <Tabs isFitted variant='unstyled'>
             <Box borderBottom='1px solid #4E5968' width='100%' paddingRight='var(--chakra-space-4)' paddingLeft="var(--chakra-space-4)">
-                <TabList color='gray.400' marginLeft='auto' marginRight='auto'>
-                    <Tab _selected={{ fontWeight: 'bolder', color: '#E0E0E0'}}>Envoyer</Tab>
-                    <Tab _selected={{ fontWeight: 'bolder', color: '#E0E0E0'}}>Recevoir</Tab>
+                <TabList   color='gray.500' marginLeft='auto' marginRight='auto'>
+                    <Tab fontWeight='400' _selected={{ color: 'gray.100'}}>Envoyer</Tab>
+                    <Tab fontWeight='400' _selected={{ color: 'gray.100'}}>Recevoir</Tab>
                 </TabList>
                 <TabIndicator mt='-1px' height='2px' bg='main' borderRadius='1px'/>
             </Box>

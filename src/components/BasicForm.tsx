@@ -13,11 +13,12 @@ import TopBox from './TopBox'
 
 
 const BasicForm: React.FC = () => {
+
     const options = ['Paul', 'Vijay', 'Sarah', 'John'];
 
     return(
         <FormControl display="flex" flexDirection="column" gap={7}>
-            <TextInput label='Entrez un message' placeholder='placeholder'></TextInput>
+            <TextInput label='Message' placeholder='Entrez un message à crypter...'></TextInput>
             <SelectInput label='Destinataire' elements={options}></SelectInput>
             <Button bg='main' color="white">Crypter</Button>
         </FormControl> 

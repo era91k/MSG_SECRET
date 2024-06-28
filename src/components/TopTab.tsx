@@ -11,7 +11,7 @@ const TopTab: React.FC = () => {
                     <Tab _selected={{ fontWeight: 'bolder', color: '#E0E0E0'}}>Envoyer</Tab>
                     <Tab _selected={{ fontWeight: 'bolder', color: '#E0E0E0'}}>Recevoir</Tab>
                 </TabList>
-                <TabIndicator mt='-1px' height='2px' bg='#2C4BE2' borderRadius='1px'/>
+                <TabIndicator mt='-1px' height='2px' bg='main' borderRadius='1px'/>
             </Box>
             <TabPanels marginTop="10px">
                 <TabPanel>

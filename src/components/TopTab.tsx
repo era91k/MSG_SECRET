@@ -18,7 +18,7 @@ const TopTab: React.FC = () => {
                     <BasicForm></BasicForm>
                 </TabPanel>
                 <TabPanel>
-                    <p>two!</p>
+                    <BasicForm></BasicForm>
                 </TabPanel>
             </TabPanels>
         </Tabs>

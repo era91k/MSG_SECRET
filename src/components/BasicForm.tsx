@@ -20,7 +20,7 @@ const BasicForm: React.FC = () => {
         <FormControl display="flex" flexDirection="column" gap={7}>
             <TextInput label='Message' placeholder='Entrez un message à crypter...'></TextInput>
             <SelectInput label='Destinataire' elements={options}></SelectInput>
-            <Button bg='main' color="white">Crypter</Button>
+            <Button _hover={{ background:'background: #5352ED'}}bg='main' color="white">Crypter</Button>
         </FormControl> 
     )
 }

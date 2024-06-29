@@ -12,7 +12,7 @@ const SelectInput: React.FC<SelectInputProps> = ({label, elements}) => {
             <FormLabel color="dark-theme.label-white">{label}</FormLabel>
             <Select bg="dark-theme.element-grey" border="none" color="gray.400">
                 {elements.map((element, index) => (
-                    <option key={index} value={element}>
+                    <option style={{ color: '#D9D9D9', background: '#161618'}} key={index} value={element}>
                         {element}
                     </option>
                 ))}

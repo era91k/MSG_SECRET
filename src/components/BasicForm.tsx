@@ -9,17 +9,20 @@ import {
 } from '@chakra-ui/react'
 import TextInput from './TextInput'
 import SelectInput from './SelectInput'
-import TopBox from './TopBox'
+import BasicFormProps from '../interfaces/BasicFormProps';
 
 
-const BasicForm: React.FC = () => {
-
-    const options = ['Paul', 'Vijay', 'Sarah', 'John'];
+const BasicForm: React.FC<BasicFormProps> = ({
+    TextInputLabel, 
+    TextInputPlaceholder, 
+    SelectInputLabel, 
+    SelectInputOptions
+}) => {
 
     return(
         <FormControl display="flex" flexDirection="column" gap={7}>
-            <TextInput label='Message' placeholder='Entrez un message à crypter...'></TextInput>
-            <SelectInput label='Destinataire' elements={options}></SelectInput>
+            <TextInput label={TextInputLabel} placeholder={TextInputPlaceholder}></TextInput>
+            <SelectInput label={SelectInputLabel} elements={SelectInputOptions}></SelectInput>
             <Button _hover={{ background:'background: #5352ED'}}bg='main' color="white">Crypter</Button>
         </FormControl> 
     )

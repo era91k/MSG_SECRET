@@ -1,0 +1,4 @@
+html, body, #app, #app>div {
+    height: 100vh;
+    background-color: #1B1B1F!important;
+  }

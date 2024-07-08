@@ -6,7 +6,7 @@ import TopTab from "../components/TopTab";
 
 const HomePage: React.FC = () => {
     return(
-        <Box bg="dark-theme.bg-black" height="100%">
+        <Box height="100%">
             <TopBox></TopBox>
             <TopTab></TopTab>
         </Box>
